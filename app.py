@@ -13,7 +13,7 @@ st.write("Tugas UAS - Pemrosesan Citra Digital & Kecerdasan Buatan")
 # Memuat model AI yang sudah dilatih sebelumnya
 @st.cache_resource
 def load_my_model():
-    return tf.keras.models.load_model('UAS_Computer_Vision/models/model_mamalia_unggas.h5')
+    return tf.keras.models.load_model('model_mamalia_unggas.h5')
 
 try:
     model = load_my_model()
